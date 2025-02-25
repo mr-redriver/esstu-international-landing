@@ -1,0 +1,97 @@
+.block-faculties-n-education .headings-block {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+.block-faculties-n-education .block__container {
+	background-color: var(--color-esstu-cyan-light-e);
+}
+
+.block-faculties-n-education .content-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+}
+
+.education-card {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 20px;
+	background-color: var(--color-white);
+	border-radius: var(--border-radius-card-l);
+}
+
+.education-card__headings {
+	justify-content: space-between;
+	display: flex;
+	gap: 15px;
+}
+
+.education-card__name {
+	color: var(--color-gray-4);
+	font-size: var(--font-size-heading);
+}
+
+.education-card__cover {
+	display: block;
+	width: 110px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+}
+
+.education-card__cover,
+.education-card__cover.is-style-square {
+	border-radius: var(--border-radius-card-s);
+}
+
+.education-card__cover.is-style-round {
+	border-radius: 50%;
+}
+
+.education-card__cover.is-style-rounded-triangle {
+	border-radius: var(--border-radius-card-s) var(--border-radius-card-s) 100% var(--border-radius-card-s);
+}
+
+.education-card__cover.is-style-four-rounds {
+	border-radius: var(--border-radius-card-s);
+	clip-path: path("M27.5 55.0385C12.3122 55.0385 0 67.3507 0 82.5385C0 97.7263 12.3122 110.039 27.5 110.039C42.6878 110.039 55 97.7263 55 82.5385C55 97.7263 67.3122 110.039 82.5 110.039C97.6878 110.039 110 97.7263 110 82.5385C110 67.3507 97.6878 55.0385 82.5 55.0385C97.6878 55.0385 110 42.7263 110 27.5385C110 12.3507 97.6878 0.0385132 82.5 0.0385132C67.3122 0.0385132 55 12.3507 55 27.5385C55 12.3507 42.6878 0.0385132 27.5 0.0385132C12.3122 0.0385132 0 12.3507 0 27.5385C0 42.7263 12.3122 55.0385 27.5 55.0385ZM27.5 55.0385C42.6878 55.0385 55 42.7263 55 27.5385C55 42.7263 67.3122 55.0385 82.5 55.0385C67.3122 55.0385 55 67.3507 55 82.5385C55 67.3507 42.6878 55.0385 27.5 55.0385Z");
+}
+
+.education-card__cover.is-style-ellipse {
+	border-radius: var(--border-radius-card-s);
+	clip-path: path("M98.7715 11.267C117.161 29.6568 112.472 64.1618 88.2976 88.3362C64.1233 112.51 29.6183 117.2 11.2285 98.81C-7.16126 80.4202 -2.47197 45.9152 21.7024 21.7409C45.8767 -2.43345 80.3817 -7.12274 98.7715 11.267Z");
+}
+
+.education-card__footer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-top: auto;
+}
+
+.education-card__tags-block {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.education-card__tag {
+	--button-color-bg: var(--color-gray-f);
+	--button-color-text: var(--color-gray-9);
+}
+
+.education-card__tag.is-accent {
+	--button-color-bg: var(--color-esstu-cyan-light-d);
+	--button-color-text: var(--color-gray);
+}
+
+.education-card__description {
+	color: var(--color-gray-9);
+	font-size: var(--font-size-content-small);
+}
