@@ -41,6 +41,7 @@
 
 .block-about-us__text-block .text-p {
 	width: var(--space-column-2);
+	font-size: var(--font-size-content-big);
 }
 
 .block-about-us__text-block:nth-child(2) {
