@@ -1,0 +1,43 @@
+.block-advantages {
+	padding: 45px 0;
+}
+
+.block-advantages .content-wrapper {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.advantage {
+	grid-column: span 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 30px;
+	padding: 20px;
+	background-color: var(--color-gray-f);
+	border: 1px solid var(--color-gray-e);
+	border-radius: var(--border-radius-card-m)
+}
+
+.advantage.is-size-small {
+	grid-column: span 1;
+}
+
+.advantage.is-size-big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.advantage.is-size-big .advantage__label {
+	text-align: right;
+}
+
+.advantage__number {
+	color: var(--color-gray-4);
+	font-size: 48px;
+	font-weight: 900;
+}
+
+.advantage__label {
+	color: var(--color-gray-c);
+	font-size: var(--font-size-content);
+}
