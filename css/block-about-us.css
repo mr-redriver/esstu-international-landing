@@ -1,5 +1,18 @@
 .block-about-us {
+	position: relative;
 	padding: 45px 0;
+}
+
+.block-about-us .content-wrapper {
+	gap: 35px;
+}
+
+.block-about-us .ulzy {
+	position: absolute;
+	left: 50%;
+	z-index: -1;
+	transform: translate(-50%,calc(-50% - 90px));
+	height: 135px;
 }
 
 .block-about-us__image-block {
@@ -13,14 +26,13 @@
 }
 
 .block-about-us__description {
-	position: relative;
 	grid-column-start: 2;
 	grid-column-end: 4;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	gap: var(--space-column-gap);
-	padding-left: 20px;
+	/* padding-left: 20px; */
 }
 
 .block-about-us__description .text-heading {
@@ -28,19 +40,9 @@
 	grid-column-end: 3;
 }
 
-.block-about-us__description .ulzy {
-	position: absolute;
-	right: 0;
-	top: 0;
-	z-index: -1;
-}
-
-.block-about-us__text-block {
-	display: flex;
-}
-
 .block-about-us__text-block .text-p {
-	width: var(--space-column-2);
+	columns: 2;
+	column-gap: 35px;
 	font-size: var(--font-size-content-big);
 }
 
