@@ -3,7 +3,7 @@
 	position: sticky;
 	top: 0;
 	z-index: 999;
-	background: linear-gradient(to bottom, #ffffffaa 90%, #fffa);
+	background: linear-gradient(to bottom, #ffffffca 90%, #fffa);
 	backdrop-filter: blur(25px);
 	border-bottom: 1px solid var(--color-gray-f);
 }

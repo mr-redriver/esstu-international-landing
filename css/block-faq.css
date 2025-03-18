@@ -5,7 +5,7 @@
 .block-faq .content-wrapper {
 		display: flex;
 	flex-direction: column; 
-	gap: 15px;
+	gap: 20px;
 }
 
 .block-faq__questions-list {
@@ -14,10 +14,6 @@
 	padding: 10px;
 	border-radius: var(--border-radius-card-l);
 	background-color: var(--color-gray-f);
-}
-
-.questions-list__item {
-
 }
 
 .questions-list__item:not(:last-child)::after {
@@ -63,6 +59,8 @@
 .questions-list-item__answer {
 	display: inline-block;
 	padding: 15px;
+	color: var(--color-gray-4);
+	font-size: var(--font-size-content-small);
 	background-color: var(--color-white);
 	border-radius: 0 var(--border-radius-card-m) var(--border-radius-card-m) var(--border-radius-card-m);
 	margin: 0 20px 20px 20px;
