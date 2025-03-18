@@ -64,6 +64,14 @@
 	border: 2px solid var(--button-color-bg);
 }
 
+.button.is-has-only-icon {
+	padding: 10px;
+}
+
+.button.is-has-only-icon.is-size-s {
+	padding: 5px;
+}
+
 .button[label]:before {
 	content: attr(label);
 	color: var(--color-gray-9);
