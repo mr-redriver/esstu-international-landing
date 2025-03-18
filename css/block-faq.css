@@ -1,0 +1,74 @@
+.block-faq {
+	padding: 45px 0;
+}
+
+.block-faq .content-wrapper {
+		display: flex;
+	flex-direction: column; 
+	gap: 15px;
+}
+
+.block-faq__questions-list {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	border-radius: var(--border-radius-card-l);
+	background-color: var(--color-gray-f);
+}
+
+.questions-list__item {
+
+}
+
+.questions-list__item:not(:last-child)::after {
+	content: "";
+	display: block;
+	margin: 0 20px;
+	border-top: 1px solid var(--color-gray-e);
+}
+
+.questions-list-item__question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	cursor: pointer;
+	color: var(--color-gray-4);
+	font-size: var(--font-size-heading);
+	font-weight: 600;
+}
+
+.questions-list-item__question::after {
+	content: url("data:image/svg+xml, <svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M12 4C12.5523 4 13 4.44772 13 5V11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H13V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H11V5C11 4.44772 11.4477 4 12 4Z' fill='%231D1D1D'/></svg>");
+	display: block;
+	width: 38px;
+	height: 38px;
+	font-size: initial;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: var(--border-radius-button-s);
+	background-color: var(--color-white);
+	border: 1px solid var(--color-gray-e)
+}
+
+.questions-list__item[open] .questions-list-item__question::after {
+	content: url("data:image/svg+xml, <svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z' fill='%231D1D1D'/></svg>");
+}
+
+@keyframes open {
+	0% {opacity: 0; transform:translateX(-15px)}
+	100% {opacity: 1; transform:translateX(0)}
+}
+
+.questions-list-item__answer {
+	display: inline-block;
+	padding: 15px;
+	background-color: var(--color-white);
+	border-radius: 0 var(--border-radius-card-m) var(--border-radius-card-m) var(--border-radius-card-m);
+	margin: 0 20px 20px 20px;
+	transition: var(--transition) ease-in 150ms;
+}
+
+.questions-list__item[open] .questions-list-item__answer {
+	animation: open .5s ease-in-out;
+}
