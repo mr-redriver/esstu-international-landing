@@ -41,3 +41,27 @@
 	color: var(--color-gray-c);
 	font-size: var(--font-size-content);
 }
+
+
+@media screen and (max-width: 1024px) {
+	.block-advantages {
+		padding: 30px 0;
+	}
+
+	.block-advantages .content-wrapper {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.block-advantages .content-wrapper > div:empty {
+		display: none;
+	}
+
+	.advantage.is-size-big {
+		grid-column: span 2;
+		grid-row: span 1;
+	}
+
+	.advantage.is-size-small {
+		grid-column: span 2;
+	}
+}

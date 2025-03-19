@@ -57,3 +57,14 @@
 .block-about-us__text-block:nth-of-type(2n) {
 	justify-content: flex-end;
 }
+
+
+@media screen and (max-width: 1024px) {
+	.block-about-us {
+		padding: 30px 0;
+	}
+
+	.block-about-us__description {
+		grid-column: 1 / -1;
+	}
+}

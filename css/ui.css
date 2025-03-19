@@ -134,3 +134,9 @@
 .is-text-decoration-wave-underline {
 	text-decoration: 1px underline wavy;
 }
+
+@media screen and (max-width: 1024px) {
+	.grid-block {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

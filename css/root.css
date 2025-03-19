@@ -47,6 +47,7 @@
   --space-column-2: calc((var(--space-column-plus-gap)) * 2 - var(--space-column-gap));
   --space-column-3: calc((var(--space-column-plus-gap)) * 3 - var(--space-column-gap));
   --space-column-4: calc((var(--space-column-plus-gap)) * 4 - var(--space-column-gap));
+	--space-column-8: calc((var(--space-column-plus-gap)) * 8 - var(--space-column-gap));
 
 	/* Скругления углов */
 	--border-radius-button-s: 3px;
@@ -92,4 +93,11 @@ a {
 
 a:hover {
 	text-decoration: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+	:root {
+		--max-width-content-block: 837px;
+	}
 }

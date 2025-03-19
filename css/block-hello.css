@@ -34,3 +34,17 @@
 .block-hello__image {
 	width: var(--space-column-2);
 }
+
+@media screen and (max-width: 1024px) {
+	.block__container {
+		padding: 45px 15px;
+	}
+	
+	.block-hello__descr h1 {
+		font-size: calc(var(--font-size-heading-large) - 12px);
+	}
+
+	.block-hello__descr h1 .is-font-weight-light {
+		font-size: calc(var(--font-size-heading-large) - 24px);
+	}
+}

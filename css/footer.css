@@ -5,8 +5,7 @@
 }
 
 .main-footer__copyright-block {
-	grid-column-start: 1;
-	grid-column-end: 4;
+	grid-column: 1 / -1;
 	display: flex;
 	justify-content: center;
 	gap: 15px;
@@ -59,4 +58,24 @@
 .main-footer__target-banner .main-footer__buttons-list {
 	flex-direction: row;
 	gap: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.main-footer {
+		margin-top: 15px;
+	}
+
+	.main-footer .grid-block {
+		gap: 30px 15px;
+	}
+
+	.main-footer__block {
+		grid-column: span 1;
+	}
+
+	.main-footer__block:nth-child(3) {
+		grid-column: span 2;
+		grid-row: 1 / 2;
+	}
 }
