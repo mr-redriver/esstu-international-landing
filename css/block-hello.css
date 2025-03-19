@@ -48,3 +48,30 @@
 		font-size: calc(var(--font-size-heading-large) - 24px);
 	}
 }
+
+@media screen and (max-width: 720px) {
+	.block-hello__descr {
+		width: 100%;
+	}
+
+	.block-hello__descr h1 {
+		font-size: calc(var(--font-size-heading-large) - 24px);
+	}
+
+	.block-hello__descr h1 .is-font-weight-light {
+		font-size: calc(var(--font-size-heading-large) - 36px);
+	}
+
+	.block-hello .content-wrapper {
+		flex-direction: column-reverse;
+		gap: 30px;
+	}
+
+	.block__container {
+		padding: 45px 0;
+	}
+
+	.block-hello__image {
+		width: var(--space-column-4);
+	}
+}

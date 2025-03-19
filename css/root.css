@@ -101,3 +101,9 @@ a:hover {
 		--max-width-content-block: 837px;
 	}
 }
+
+@media screen and (max-width: 720px) {
+	:root {
+		--max-width-content-block: 416px;
+	}
+}

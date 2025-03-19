@@ -65,3 +65,33 @@
 		justify-content: flex-end;
 	}
 }
+
+@media screen and (max-width: 720px) {
+	.block-greeting .content-wrapper {
+		padding: 0;
+	}
+
+	.greeting {
+		padding: 30px 15px;
+	}
+
+	.greeting svg {
+		display: none;
+	}
+
+	.block-greeting__heading,
+	.block-greeting__content,
+	.block-greeting__avatar {
+		grid-column: 1 / -1;
+		grid-row: auto;
+	}
+
+	.block-greeting__content {
+		columns: auto;
+	}
+
+	.block-greeting__avatar {
+		width: 50%;
+		grid-row: 1 / 2;
+	}
+}

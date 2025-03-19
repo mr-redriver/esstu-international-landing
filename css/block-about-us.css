@@ -68,3 +68,9 @@
 		grid-column: 1 / -1;
 	}
 }
+
+@media screen and (max-width: 720px) {
+	.block-about-us__text-block .text-p {
+		columns: auto;
+	}
+}

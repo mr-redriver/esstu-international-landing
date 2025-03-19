@@ -79,3 +79,10 @@
 		grid-row: 1 / 2;
 	}
 }
+
+@media screen and (max-width: 720px) {
+	.main-footer__block:nth-child(3) {
+		grid-column: span 1;
+		grid-row: 1 / 2;
+	}
+}
